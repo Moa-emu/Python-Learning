@@ -10,6 +10,12 @@
 #  - (*) Multiplication  ex: 3 * 5  This will evaluate to 15 just normal multiplication
 #  - (-) Subtraction ex: 5 - 2 This will evaluate to 3 because it is just normal subtraction
 #  - (+) Addition ex: 2 + 2 Thsi will evaluater to 4 because we are just doing basic additon
+ 
+
+
+# Also Another thing that you should know is that python has it's own precedence just like how in math we have rules like PEMDAS
+# IN python the Operation order from first to last is **, *, /, //, %, +, -
+# You can overide these operators by using parentheses for example: (2 + 3) * 6 . 2 + 3 is done first then the result is multiplied by 6
 
 # print will just print the output to the console/ terminal
 # also we make comments in pyton using # if you could not tell comments are useful for writing notes and explaining how code works
@@ -35,3 +41,5 @@ print(3 + 3)
 #Below we are uising the subtraction operator
 print(3 - 3)
 
+# below is an example using parentheis and math operators
+print((5 - 1) * ((7 + 1) / (3 - 1)))
