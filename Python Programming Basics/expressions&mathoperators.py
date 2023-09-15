@@ -43,3 +43,6 @@ print(3 - 3)
 
 # below is an example using parentheis and math operators
 print((5 - 1) * ((7 + 1) / (3 - 1)))
+
+
+# in the book we for this exercise we started at page 37  and ended at page 40
