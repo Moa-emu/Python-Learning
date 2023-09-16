@@ -26,3 +26,5 @@ print(profit)
 #- also it is a good Idea to use camel casing ex: moneyPerHour  - where the first word is lower case and the rest is capitalized
 #- also making variables using uderscores like this is cool to  money_Per_Hour
 # - and last but not least variables are case sensitive meaning that money, Money and MONEY are all diffrent variables
+
+# we stopped on pg 21 of automate the boring stuff
