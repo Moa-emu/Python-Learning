@@ -12,3 +12,17 @@ money = 12
 hours = 12
 profit = money * hours
 print(profit)
+
+# What to remember when Naming your variables
+# - make it one word
+# - you can use letters, numbers and underscores(_)
+# - Do not let it begin with a number
+# - Do not let it have any spaces
+# - Do not Let it have any hyphens(-)
+# - Do not let it have any special characters such as (%, *, $, '') or anything like that 
+
+
+# Additonal notes on creating variable names make sure that your variable names are descriptive so you can remember what they are being used for
+#- also it is a good Idea to use camel casing ex: moneyPerHour  - where the first word is lower case and the rest is capitalized
+#- also making variables using uderscores like this is cool to  money_Per_Hour
+# - and last but not least variables are case sensitive meaning that money, Money and MONEY are all diffrent variables
