@@ -10,6 +10,8 @@ print('are you happy ' + str(happy)) # this will print true
 sad = False
 print('are you sad ' +  str(sad))
 
+
+
 #Comparison Operators
 #   - these are used to compare two values and evaluate them to True or False
 # Here are the comparison operators
@@ -31,8 +33,6 @@ print('are you sad ' +  str(sad))
 'star wars' != 'star treck' # this returns false
 
 
-
-
 # <  : less than
 #ex: below
 5 < 10 # this will return true
@@ -43,18 +43,49 @@ print('are you sad ' +  str(sad))
 #ex: below
 a = 5
 b = 9
-print("is 9 greater than 5 " + str(b > a))
+print("is 9 greater than 5 " + str(b > a)) #returns true
 
 # <= : less than or equal to 
 a = 3
 b = 9
-print("is 9 greater than 5 " + str(b <= a))
+print("is 9 less than or equal to 5 " + str(b <= a)) # returns fals
 
 # >= : greater than or equal to 
 a = 3
 b = 9
-print("is 9 greater than 5 " + str(b >= a)) #returns true
+print("is 9 greater than or equal to 5 " + str(b >= a)) #returns true 
 
 
 
- 
+
+
+
+
+ #Logical Operators
+
+#REMEMBER THAT PYTON DOES NOT USE THE SYMBOLS
+# AND(&&) - this takes two boolean values 
+#   - the condition is that both boolean values must be true to evaluate as true any other case and it is false
+#ex: below
+a = 5
+b = 9
+c = 10
+#also for the logical operators you can use the symbol or type out the word in python
+print ((b > a) and (b < 10)) # this will evaluate to true
+
+
+
+# OR(||) - this takes two boolean values
+#   - atleast one has to be true for it to evaluate to true 
+#ex: below
+print (True or False) #this will evaluate to true even though
+print ((False) or (False)) #this will evaluate to false no condition is true
+
+
+# NOT(!) - this takes one boolean value and just changes it to its oposite
+#ex: below
+print (not True) # this will evaluate to false
+print (not False)# this will evaluate to true
+
+#last but not least when mixing logical operators remember that  the computer will read from the left then to right
+#also remember that there is an order of operation not operators are evaluated first, then and operators and lastly or operators
