@@ -10,7 +10,7 @@
 #  - (*) Multiplication  ex: 3 * 5  This will evaluate to 15 just normal multiplication
 #  - (-) Subtraction ex: 5 - 2 This will evaluate to 3 because it is just normal subtraction
 #  - (+) Addition ex: 2 + 2 Thsi will evaluater to 4 because we are just doing basic additon
- 
+
 
 
 # Also Another thing that you should know is that python has it's own precedence just like how in math we have rules like PEMDAS
