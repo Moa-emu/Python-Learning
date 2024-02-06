@@ -52,3 +52,8 @@ while counter <= 10:
         continue # Skip printing the even numbers
     print(counter)
     counter += 1
+
+
+
+
+# Im skipping truthsey and falsey values in python but maybe read up on them

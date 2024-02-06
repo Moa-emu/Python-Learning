@@ -87,5 +87,9 @@ print ((False) or (False)) #this will evaluate to false no condition is true
 print (not True) # this will evaluate to false
 print (not False)# this will evaluate to true
 
+#remember there is also the (!=) not equal to sign
+
 #last but not least when mixing logical operators remember that  the computer will read from the left then to right
 #also remember that there is an order of operation not operators are evaluated first, then and operators and lastly or operators
+
+
