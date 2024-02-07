@@ -71,4 +71,15 @@ for symbol in userMessage:
 
      #below will be an else statement if the symbol is not in the SYMBOLS CONSTANT
     else:
-        print()
+       #the code below just adds the symbol not in the SYMBOL CONSTANT at the end of the translated string
+        translated = translated + symbol
+
+
+#below will just output the translated string
+if userChoice == 'encrypt':
+    print(f'here is your encrypted message: {translated}')
+elif userChoice == 'decrypt':
+    print(f'here is your decrypted message: {translated}')
+#below will copy the translated message in the users sticky note app
+pyperclip.copy(translated)
+         
