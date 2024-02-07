@@ -8,3 +8,13 @@ Shift each letter of the alphabet by the chosen shift value. For instance, if th
 To encrypt a message, replace each letter in the plaintext with the corresponding letter from the shifted alphabet. For example, with a shift of 3, the word "hello" would become "khoor."
 To decrypt the message, perform the reverse operation by shifting each letter back by the same amount. So, "khoor" would become "hello" again.
 Despite its simplicity, the Caesar cipher is not considered secure for serious encryption needs due to its vulnerability to brute force attacks. There are only 25 possible shifts in the English alphabet, so an attacker could try all possible shifts to find the correct one. Furthermore, it does not provide strong confidentiality, integrity, or authenticity for messages
+
+
+example below of a shifted ceaser cipher:
+S T U V W X Y Z A B  C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R  
+A B C D E F G H I J  K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z 
+0 1 2 3 4 5 6 7 8 9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25
+
+In the example above now in the encrypted message if I want to say:
+ORIGINAL:  HELLO 
+ENCRYPTED: ZWDDG

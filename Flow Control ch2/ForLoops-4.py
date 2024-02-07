@@ -26,6 +26,20 @@ while i < 5:
  print('Jimmy Five Times (' + str(i) + ')')
  i = i + 1
 
+ # Here is another example
+ i = 0
+while i < len('Howdy'):
+  letter = 'Howdy'[i]
+  print('The letter is ' + letter)
+  i = i + 1
+
+  #the output will be 
+# The letter is H
+# The letter is o
+# The letter is w
+# The letter is d
+# The letter is y
+
 
 
 
