@@ -1,0 +1,10 @@
+The Caesar cipher is a simple encryption technique that involves shifting the letters of the alphabet by a certain number of places. For example, with a shift of 1, 'A' would become 'B', 'B' would become 'C', and so forth. This method is named after Julius Caesar, who allegedly used it to protect his communications from potential spies.
+
+Here's how it works:
+
+Choose a shift value, typically between 1 and 25, which determines how many positions each letter in the plaintext is moved down the alphabet.
+Write down the letters of the alphabet in order.
+Shift each letter of the alphabet by the chosen shift value. For instance, if the shift value is 3, 'A' would become 'D', 'B' would become 'E', and so on.
+To encrypt a message, replace each letter in the plaintext with the corresponding letter from the shifted alphabet. For example, with a shift of 3, the word "hello" would become "khoor."
+To decrypt the message, perform the reverse operation by shifting each letter back by the same amount. So, "khoor" would become "hello" again.
+Despite its simplicity, the Caesar cipher is not considered secure for serious encryption needs due to its vulnerability to brute force attacks. There are only 25 possible shifts in the English alphabet, so an attacker could try all possible shifts to find the correct one. Furthermore, it does not provide strong confidentiality, integrity, or authenticity for messages
