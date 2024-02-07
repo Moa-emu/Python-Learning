@@ -1,6 +1,7 @@
 #Read Information.txt and below is how we will brute force the Ceaser Cipher
 
 #The program will decrypt the ciphertext with all possible keys
+#This program will use a double for loop
 
 print('This is the Ceaser Cipher Brute Force Decrypter')
 #below will be where we store the users message
