@@ -8,12 +8,15 @@
 #below will be our main funtion
 def main(numberItems):
     summary = 10.95
-    if numberItems > 1:
+    if numberItems >= 1:
         summary += (numberItems * 2.95)
-        return summary
+        print(f'Here is your item summary: ${summary}')
     elif numberItems == 0:
-        return 0
-    
-customerNum = int(input(('welcome customer ')))
+        summary = 0
+        print(f'here is your Item summary: ${summary}')
 
+
+customerNum = int(input(('welcome customer put the amount of items that you want to purchase:')))
+if __name__ == "__main__":
+    main(customerNum)
 
