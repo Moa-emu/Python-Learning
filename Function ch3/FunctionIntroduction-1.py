@@ -18,4 +18,9 @@ def hello(name):
 
 #below now when calling hello I have to fill in the parameter
 hello('Megan') #it will print hello Megan
-#REMEMBER
+#REMEMBER that the parameter you put is forgoten after execution so if you type print(name) after hello('megan') it would give you an error
+
+
+
+
+
