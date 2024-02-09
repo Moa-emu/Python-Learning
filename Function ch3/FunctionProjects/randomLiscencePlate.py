@@ -19,33 +19,62 @@ def main():
             newerLiscence = ''
             ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
             NUMBERS = '1234567890'
+
+            while True:
+                # This line creates a string named front. this by selecting four characters randomly from a predefined constant ALPHABET
+                # The join() method is used to concatenate these characters into a single string without any separator between them because an empty string ('') is passed as the separator
+                front = ''.join(random.choice(ALPHABET) for i in range(4))
+                back = ''.join(random.choice(NUMBERS) for i in range(3))
+
+                #below will make sure that the newer lisence plate 
+                if len(front) ==  4 and len(back) ==  3:
+                     #below will add front and back to get the newer liscnence
+                    newerLicense = front + back
+                    print(f'Here is your newer license plate: {newerLicense}')
+                    break
+
+                 
+         
+
+
+
+
+
+         elif userChoice == 'older':
+              #below will be where we store the newer lisence plate
+            newerLiscence = ''
+            ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+            NUMBERS = '1234567890'
             #below will be where we will keep the characters for the front and back of the lisence plate
             front = ''
             back = ''
             
             #The while loop below will keep adding random numbers and letters and then join them together for 
-            while len(front)!= 4:
+            while len(front)!= 4 and len(back)!= 3:
+
+                #below will be to add numbers to front
+                #always make sure that when using len on list or string add -1 to include last item
+                #below randomNum indexes a random number from the length of numbers string
                 randomNum = random.randint(0, len(NUMBERS)-1)
-                randomLetter = random.randint(0, len(ALPHABET)-1)
-                
-
-                #below will be a for loop to add numbers
+                #below uses that random number to index a random number from numbers string 
+                #now that I am looking at it this could be way simpler
                 ranNumber = NUMBERS[randomNum]
+                #below actually adds the number to front
                 front += ranNumber
-            print(front)
-                
-                
-                #below will be a for loop to add letters
-                #ranLetter = ALPHABET[randomLetter]
+
+                #below will be to add letters to back
+                #always make sure that when using len on list or string add -1 to include last item
+                randomLetter = random.randint(0, len(ALPHABET)-1)
+                #below uses the random letter number to index a letter from alphabet string
+                ranLetter = ALPHABET[randomLetter]
+                #below actually adds the letter to back
+                back += ranLetter
 
 
-            break
-         
-         elif userChoice == 'older':
-             #below will be where we store the older liscence plate
-            newerLiscence = ''
-            ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
-            NUMBERS = '1234567890'
+                #below will add front and back to get the Older liscnence
+                olderLiscence = front + back
+            print(f' Here is your Older Lisence plate : {olderLiscence}')
+            #break stops the loop
             break
          
          else:
