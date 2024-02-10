@@ -20,4 +20,16 @@ def main():
 
         #below will loop through each column in ciphertext
         for column in range(key):
+            #below will make the currentIndex variable to whatever column num is
             currentIndex = column
+
+            #the while finds and concatenates the right charcter in usermessage
+            #below will make the while loop keep looping until currentIndex goes past the message length
+            while currentIndex < len(userMessage):
+                #below will place the charcter at currentIndex in message at the end of the current column in the ciphertext list
+                cipherText[column] += message[currentIndex]
+
+                #below moves curent index over:
+                currentIndex += key
+
+
