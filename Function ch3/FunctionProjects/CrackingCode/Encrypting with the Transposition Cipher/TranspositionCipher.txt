@@ -1,0 +1,21 @@
+The Caesar cipher isn’t secure; it doesn’t take much for a computer to brute-force through all 66
+possible keys. The transposition cipher, on the other hand, is more difficult to brute-force because
+the number of possible keys depends on the message’s length. There are many different types of
+transposition ciphers, including the rail fence cipher, route cipher, Myszkowski transposition cipher,
+and disrupted transposition cipher. This chapter covers a simple transposition cipher called the
+columnar transposition cipher.
+
+How the Cipher works:
+Instead of substituting characters with other characters, the transposition cipher rearranges the
+message’s symbols into an order that makes the original message unreadable. Because each key
+creates a different ordering, or permutation, of the characters, a cryptanalyst doesn’t know how to
+rearrange the ciphertext back into the original message.
+The steps for encrypting with the transposition cipher are as follows:
+1. Count the number of characters in the message and the key.
+2. Draw a row of a number of boxes equal to the key (for example, 8 boxes for a key of 8).
+3. Start filling in the boxes from left to right, entering one character per box.
+4. When you run out of boxes but still have more characters, add another row of boxes.
+5. When you reach the last character, shade in the unused boxes in the last row.
+6. Starting from the top left and going down each column, write out the characters. When you get
+to the bottom of a column, move to the next column to the right. Skip any shaded boxes. This
+will be the ciphertext.
