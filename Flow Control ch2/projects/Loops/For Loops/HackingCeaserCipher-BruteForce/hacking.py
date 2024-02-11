@@ -35,20 +35,20 @@ for key in range(len(SYMBOLS)):
             translatedIndex = symbolIndex - key  
                                                                   
             
-        #below will handle wraparound.....(explanation)=> When the shift reaches the end of the SYMBOLS string, it needs to "wrap around" to the beginning of the string again.  
-        if translatedIndex < 0:
-            translatedIndex = translatedIndex + len(SYMBOLS)
+            #below will handle wraparound.....(explanation)=> When the shift reaches the end of the SYMBOLS string, it needs to "wrap around" to the beginning of the string again.  
+            if translatedIndex < 0:
+                translatedIndex = translatedIndex + len(SYMBOLS)
 
-        #below will add each translated character to the empty translated string to store the encrypted/decrypted message
-        #it takes the position of the translatedIndex to take its corresponding new SYMBOL CHARACTER FROM THE SYMBOL CONSTANT
-        translated = translated + SYMBOLS[translatedIndex]
+            #below will add each translated character to the empty translated string to store the encrypted/decrypted message
+            #it takes the position of the translatedIndex to take its corresponding new SYMBOL CHARACTER FROM THE SYMBOL CONSTANT
+            translated = translated + SYMBOLS[translatedIndex]
 
     
 
-     #below will be an else statement if the symbol is not in the SYMBOLS CONSTANT
-    else:
-       #the code below just adds the symbol not in the SYMBOL CONSTANT at the end of the translated string
-        translated = translated + symbol
+        #below will be an else statement if the symbol is not in the SYMBOLS CONSTANT
+        else:
+        #the code below just adds the symbol not in the SYMBOL CONSTANT at the end of the translated string
+            translated = translated + symbol
 
 
     #below will print evry possible decryption
