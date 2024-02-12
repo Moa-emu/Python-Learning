@@ -24,7 +24,8 @@ def encryptMessage(key, message):
                 cipherText[column] += message[currentIndex]
 
                 #below moves curent index over:
-                currentIndex += key + 1
+                currentIndex += key  #IF YOU WANT TO TEST IF TEST PROGRAM ACTUALLY WORKS TYPE THIS LINE HERE currentIndex += key + 1
+                #what should be on the line above is currentIndex += key
         
         #below will conver the cipherText list into a single string value and return it
         return ''.join(cipherText)
