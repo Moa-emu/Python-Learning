@@ -29,7 +29,7 @@ print(f'Hello, {RandomList[1][1]}')# this will print Hello, you are my sunshine
 #ALSO DO NOT DO ANYTHING STUPID LIKE => ListName[1.0] - That will give you an error
 
 
-#______________________________________________________________________________
+#___________________________________________________________________________________________________________________________________
 
 #NEGATIVE INDEXES
 #   - Just like with strings if you try to do a negative index it will go from last to first
@@ -38,7 +38,7 @@ campingSupplies = ['Backpack', 'Tent', 'HickingBoots', 'Knife']
 #Negative values start from -1 since you can not have -0 That just doesn't make sense
 print(campingSupplies[-2]) # this will print our HickingBoots
 
-
+#__________________________________________________________________________________________________________________________________
 
 
 
