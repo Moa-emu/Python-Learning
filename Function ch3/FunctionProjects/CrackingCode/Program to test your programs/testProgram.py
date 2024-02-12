@@ -20,6 +20,20 @@ def main():
         #then after multiplying later down we will shuffle that string to have more random text
         message = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' * random.randint(4, 40)
 
+        #below will convert the message into a list we will go over list more in the next chapter
+        message = list(message)
+        #below will use the random.shuffle() function to shuffle all of the elements in the list in a random way
+        random.shuffle(message)
+
+        #below will convert the message list back into a string
+        message = ''.join(message)
+
+
+        #Below will be how we test each message
+
+        #this will just print what we are testing# also REMBER THAT WE ARE STILL IN A FOR LOOP
+        print(f'Test #{i+1}: {message}')
+
 
 
 
