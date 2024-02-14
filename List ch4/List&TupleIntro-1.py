@@ -148,6 +148,128 @@ for i in range(len(FreirenCharacters)):
 
 #__________________________________________________________________________________________________________________________________________________
 
+# IN and NOT in operators with list
+
+if 'howdy' in ['hello', 'sir', 'howdy']:
+    print(True) # it will print true
+else:
+    print(False)
+
+
+if 'howdy' not in ['hello', 'sir', 'Gooday']:
+    print(True) # it will print True
+else:
+    print(False)
 
 
 
+#_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+#THE MULTIPLE ASSIGNMENT TRICK
+    
+# The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
+cat = ['fat', 'black', 'loud']
+size = cat[0]
+color = cat[1]
+disposition = cat[2]
+# you could type this line of code:
+cat = ['fat', 'black', 'loud']
+size, color, disposition = cat # YOU CAN ONLY DO THIS WHEN THE VARIABLES REFLECT THE AMOUNT OF INDEXES IN THE LIST IF MORE OR LESS IT WILL RESULT IN AN ERROR
+
+
+#____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+#METHODS IN A LIST -  think of these just like using function on list items to modify them
+# - you denote a method by listName.methodName()
+
+
+
+#-INDEX METHOD
+continents = ['Africa', 'North America', 'Asia', 'Europe', 'South America', 'Astralia']
+#below will be the index method to show the index of an item in a list
+print(continents.index('Africa')) #this will print 0
+print(continents.index('Europe')) #this will print 3
+
+
+
+
+
+
+
+
+#ADDING VALUES WITH THE APPEND() and INSERT() METHOD
+#- this is a way to add items into a list
+
+contries = ['Nigeria', 'Brazil', 'Aulstralia', 'Moroco', 'Japan']
+#APPEND method will add something to the end of a list
+contries.append('Iran')
+print(contries) #Iran was added to the end of the list
+#the list will now look like : ['Nigeria', 'Brazil', 'Aulstralia', 'Moroco', 'Japan', 'Iran']
+
+#INSERT will add an item to a list at an index you want
+contries.insert(2, 'Madagascar')
+print(contries) # it will print ['Nigeria', 'Brazil', 'Madagascar', 'Aulstralia', 'Moroco', 'Japan', 'Iran']
+# it prints Madagascar in the second index
+
+
+
+#REMEMBER THAT INSERT AND APPEND ONLY WORKS ON LIST Not with other data types
+
+
+
+
+
+
+#USING THE REMOVE METHOD
+insects = ['Beetle', 'Praying Mantis', 'Ladybug', 'Butterfly']
+insects.remove('Praying Mantis')
+print(insects) #here is what the list looks like now: ['Beetle', 'Ladybug', 'Butterfly']
+
+
+
+
+
+#USING THE  SORT AND SHUFFLE METHODS
+# sort() is a way to sort elements in a list by accending alphabet values or increasing number  values
+#   - note that to use sort ALL ELEMENTS IN THAT LIST MUST BE THE SAME DATA TYPE OR YOU WILL GET AN ERROR
+#you can also do a reverse sort to sort elements in the reverse order
+
+pickedNumbers = [1, 23, 4, 100, 25, 30, 50, 69, 72, 30]
+pickedNumbers.sort()
+print(pickedNumbers) # this will print: [1, 4, 23, 25, 30, 30, 50, 69, 72, 100]
+
+HumanEmotions = ['happy', 'sad', 'angry', 'disgusted', 'fearful']
+HumanEmotions.sort() # it sorts the list in alphabetical order
+print(HumanEmotions) #this will print:['angry', 'disgusted', 'fearful', 'happy', 'sad']
+HumanEmotions.sort(reverse=True) # this will sort the list in reverse alphabetical order
+print(HumanEmotions) #this will print: ['sad', 'happy', 'fearful', 'disgusted', 'angry']
+
+#LAST THING TO REMEMBER ABOUT SORT WHEN DEALING WITH STRINGS
+#   - sort uses “ASCIIbetical order” rather than actual alphabetical
+# order for sorting strings. This means uppercase letters come before lowercase letters. Therefore, the lowercase a is sorted so that it comes after the
+# uppercase Z.
+#ex:below
+
+listABC = ['a', 'z', 'A','Z']
+listABC.sort()
+print(listABC) # it will print: ['A', 'Z', 'a', 'z']
+
+
+
+
+
+
+
+
+
+
+
+#USING SHUFFLE - to randombly shuffle elements of a list in place
+import random
+# Define a list of elements
+my_list = [1, 2, 3, 4, 5]
+# Shuffle the elements of the list
+random.shuffle(my_list)
+# Print the shuffled list
+print("Shuffled list:", my_list)
