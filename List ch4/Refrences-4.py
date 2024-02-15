@@ -33,7 +33,7 @@ print(mountains) #prints: ['St.Helen', 'Kilamingaro', 'Fuji', 'Rocky Mountains',
 # you are actually passing a reference to the object, 
 #not a copy of the object itself. This means that if you 
 #modify the list or dictionary within the function, 
-#those changes will be reflected outside the function as well 123.
+#those changes will be reflected outside the function as well .
 
 
 # Here are some examples to illustrate this concept:

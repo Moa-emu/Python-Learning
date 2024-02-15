@@ -34,21 +34,44 @@
 # that your main program only runs when your functions have not been imported into
 # another file.
 
-def createDeck():
-    totalCards = 52
-    cardValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    
-    print('hello')
+import random
 
-def function():
-    print('hello')
+
+def createDeck():
+    #below will hold all of the cards  
+    cardDeck = []
+    cardSuit = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
+    specialCharacters = ['Ace', 'Ten', 'Jack', 'Queen','King', '2','3','4', '5','6','7','8','9']
+
+    # i represents each individual element in cardSuit
+    # x represents each individual element in specialCharacters
+    for i in cardSuit:
+        for x in specialCharacters:
+            #print(f'{x} of {i}') #this prints all of the charcters
+            cardDeck.append(f'{x} of {i}')
+            
+    print(cardDeck)
+    #Below will allow us to return the cardDeck variable to another function
+    return(cardDeck)
+    #below I am just checking that there are 52 cards in the deck
+    #print(len(cardDeck))
+
+
+def shuffleCards(cardsDeck):
+    #below will randomly shuffle the list
+    random.shuffle(cardsDeck)
+    print(cardsDeck) 
+
+    
 
 def main():
-    print('hello')
+    print('Here is a unshuffled deck of cards:')
+    unshuffledCardDeck = createDeck()
+    print('The cards have now been shuffled here it is:')
+    shuffleCards(unshuffledCardDeck)
 
 
 
-
-
-
-
+#below will allow us to execute the program
+if __name__ == "__main__":
+    main()

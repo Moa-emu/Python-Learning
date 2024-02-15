@@ -256,15 +256,6 @@ listABC.sort()
 print(listABC) # it will print: ['A', 'Z', 'a', 'z']
 
 
-
-
-
-
-
-
-
-
-
 #USING SHUFFLE - to randombly shuffle elements of a list in place
 import random
 # Define a list of elements
