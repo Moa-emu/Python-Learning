@@ -42,41 +42,72 @@ def shuffleCards(cardsDeck):
     #below will randomly shuffle the list
     random.shuffle(cardsDeck)
     print(cardsDeck)
+    return(cardsDeck)
 
 
-def deal(shuffledCards):
-
-
-    print('hello')
 
 
 def main():
      
     while True:
-        print('1.) Shows unshuffled cards\n2.)Shows shuffled cards\n3.)Deals cards\n4.)goes back')
+        print('1.) Shows unshuffled cards\n2.)Shows shuffled cards\n3.)Deals cards\n')
         askUser = input('Type the number of choice do you want to make: ')
 
-        if askUser == 1:
-            print('hello')
+        if askUser == '1':
+            print('Here is your unshuffled deck of cards:')
+            unshuffledCardDeck = createDeck()
         
-        if askUser == 2:
-            print('2 is ')
+        elif askUser == '2':
+            print('The cards have now been shuffled here it is:')
+            remainingCards = shuffleCards(unshuffledCardDeck)
 
-        if askUser == 3:
-            print('there are')
+        elif askUser == '3':
+            
+             
+            PlayerItems = random.sample(remainingCards, 5)
+            for item in PlayerItems:
+                remainingCards.remove(item)
 
-        if askUser == 4:
-             continue
+            hand2Items = random.sample(remainingCards, 5)
+            for item2 in hand2Items:
+                remainingCards.remove(item2)
+
+            hand3Items = random.sample(remainingCards, 5)
+            for item3 in hand3Items:
+                remainingCards.remove(item3)
+
+            hand4Items = random.sample(remainingCards, 5)
+            for item4 in hand4Items:
+                remainingCards.remove(item4)
+            #below is a for loop that will remove each selected Item from the remaining cards list
+        
+            print(f'here is the PlayersHand: {PlayerItems}\n')
+            print(f'here is the Hand2: {hand2Items}\n')
+            print(f'here is the Hand2: {hand3Items}\n')
+            print(f'here is the Hand2: {hand4Items}\n')
+            print(f'here is the remaining cards in your deck: {remainingCards}\nhere is the number of cards left:{len(remainingCards)}')
+
+            #Here is a more efficent way to do it WITH LIST SLICING:
+                # import random
+                 # remainingCards = [ ... ]  # Your list of cards
+            # Shuffle the cards to ensure randomness
+                 # random.shuffle(remainingCards)
+            # Split the shuffled list into player hands
+                # PlayerItems = remainingCards[:5]
+                # hand2Items = remainingCards[5:10]
+                # hand3Items = remainingCards[10:15]
+                # hand4Items = remainingCards[15:20]
+            # Ensure that the hands are separated correctly
+                # remainingCards = remainingCards[20:]
+             
 
         else:
             print('invalid input')
         
 
 
-    print('Here is a unshuffled deck of cards:')
-    unshuffledCardDeck = createDeck()
-    print('The cards have now been shuffled here it is:')
-    shuffleCards(unshuffledCardDeck)
+    
+    
     
 
 
