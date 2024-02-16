@@ -264,3 +264,16 @@ my_list = [1, 2, 3, 4, 5]
 random.shuffle(my_list)
 # Print the shuffled list
 print("Shuffled list:", my_list)
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#USING THE COUNT METHOD
+# The count method in Python is a built-in method that belongs to the list class. It is used to count the number of occurrences of a specified element in a list. The syntax for using the count method is as follows:
+#list.count(element)
+# Here, list is the list you want to search, and element is the item you want to count the occurrences of in the list.
+# For example, if you have a list of integers and you want to count how many times the number 5 appears in the list, you would use the count method like this:
+
+numbers = [1,  2,  3,  5,  5,  4,  5,  6]
+count_of_5 = numbers.count(5)
+print(count_of_5)  # Output:  3
+# In this example, the count method returns the number 3 because the number 5 appears three times in the list numbers.
