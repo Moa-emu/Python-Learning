@@ -53,30 +53,42 @@ PostalCodes ={
     'Yukon':'Y'
 }
 
-def convertText():
-    #Below will capture the users text
-    askUser = input('Please type what you want to convert: ')
-    result = ''
-    # for char in askUser:
-    #     #Below will make a variable to store all of the uppercase characters
-    #     char_upper = char.upper()
+ 
+    
 
-    #     #Below will get all of the keys, values from the items in the keyPressesData Dictionary
-    #     for key, value in keyPressesData.items():
-    #         #Below will check if the users characters are in the keyPressData values
-    #         if char_upper in value:
-    #             #below is to find the position of each value so we can multiply it 
-    #             position = value.index(char_upper) + 1
-    #             #Below will add all of the found converter characters keys in the result
-    #             result += str(key) * position
-    #             break
-    #     else:
-    #         result += char
-    print(result)
+
+
+
+def FindPostal():
+    
+
+    #Below will capture the users text
+     
+    askUser = str(input('Please type a postal code and we will tell you wheather it is urban or rural and where it is: '))
+    #Below will be a flag if a match is found
+    found = False
+    
+    #below will make all the letters the user types 
+    upperaskUser = askUser.upper()
+    #below will go through all of the keys and values in the postal Codes dictionary
+    for key,value in PostalCodes.items():
+        #below will check if the fist character corelates with any values in the dictionary
+        # we use in instead of == because of cases like qubec: 'GHJ'
+        if upperaskUser[0] in value:
+            print(f'This is a rural adress in {key}')if upperaskUser[1] == '0' else print(f'This is a Urban adress in {key}') 
+            found = True
+            break
+
+    #If no match was found, execute the else block
+    if not found:
+        print('The postal code entered does not match any known codes.')
+    
+             
+         
 
 
 def main():
-    convertText()
+    FindPostal()
 
 if __name__ == "__main__":
     main()
